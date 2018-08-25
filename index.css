@@ -24,27 +24,27 @@ html {
 }
 
 h1, p {
-	color:  rgb(0, 0, 0);
+	color: beige;
   background-color: royalblue;
 	text-align: center;
   padding: 30px;
 }
 
 h1 {
-	font-size: 3.5em;
+	font-size: 1.8em;
 }
 
 h1, start-page {
 border-radius: 100px;
-border: 2px solid;
+border: 5px solid;
 border-color: black;
-padding: 15px;
+font-size: 2.8em;
 }
 
 h2 {
 	font-size: 1.6em;
   color: black;
-  border: 1.5px solid black;
+  border: 4px solid black;
   border-radius: 40px;
   background-color: lightgray;
   padding: 10px;
@@ -53,7 +53,7 @@ h2 {
 
 p, start-page {
   border-radius: 100px;
-  border: 2px solid;
+  border: 5px solid;
   border-color: black;
   padding: 30px;
   font-size: 2em;
@@ -73,7 +73,7 @@ button {
 	min-width: 60px;
 	margin-bottom: 1em;
 	font-size: 26px;
-  border: 1.5px solid;
+  border: 4px solid;
   border-color: black;
 	background-color: royalblue;
 	color: #ffffff;
@@ -118,6 +118,10 @@ fieldset {
 label {
 	margin-bottom: 1em;
 	font-size: 1.5em;
+  border: 4px solid black;
+  border-radius: 50px;
+  background-color: beige;
+  padding: 15px;
 }
  
 
@@ -127,10 +131,13 @@ label span, legend i {
 
 legend {
   font-size: 2.2em;
+  color: beige;
   background-color: royalblue;
-  border: 1.5px solid black;
+  border: 5px solid black;
   border-radius: 50px;
   padding: 20px;
+  opacity: none;
+  text-align: center;
 }
 
 #js-submit-button {
@@ -139,15 +146,18 @@ legend {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5px;
+  border: 4px solid black;
 }
 
 
 /* PROGRESS AND SCORE */
 #status-bar {
   background-color: royalblue;
-  height: 36px;
-  border-radius: 20px;
-  border: 1.5px solid black;
+  color: beige;
+  height: 48px;
+  border-radius: 50px;
+  border: 4px solid black;
+  padding: 5px;
 }
 
 #question-count, #score-count {
@@ -168,13 +178,18 @@ legend {
   text-align: center;
 }
 
+.feedback-page img {
+    border-radius: 30px;
+    border: 5px solid black;
+}
+
 img.center {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  border: 8px solid black;
   border-radius: 40px;
   height: 400px;
-  padding: 20px;
 }
 
 #js-next-button {
@@ -192,6 +207,7 @@ img.center {
   height: 50px;
   width: 500px;
   font-size: 22px;
+  border: 4px solid black;
 }
 
 /* smartphone responsiveness */
@@ -208,10 +224,11 @@ img.center {
 
   h1 {
     font-size: 1.75em;
+    padding: 20px;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
 	legend {
@@ -261,8 +278,8 @@ img.center {
 
 form {
   margin-bottom: 15px;
-  background-color: lightgray;
-  opacity: .9;
+  /* background-color: lightgray;
+  opacity: .9; */
   border-radius: 10px;
   padding-top: 15px;
 }
@@ -300,3 +317,4 @@ form {
   height: 50px;
   width: 500px;
   font-size: 20px;
+}

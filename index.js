@@ -204,7 +204,7 @@ function generateCorrectFeedback() {
 
 const correctFeedback = `
   <section class="feedback-page" role="region">
-    <h2>Correct!</h2>
+    <h1>Correct!</h1>
     <img src="https://i.gifer.com/2GzM.gif" alt="it's like, incredible trump gif">
     <button id="js-next-button">Next</button>
   </section>
@@ -217,7 +217,7 @@ function generateIncorrectFeedback() {
 function incorrectFeedbackTemplate(questionNum) {
   return `
     <section class="feedback-page" role="region">
-      <h2>Nope! It was ${questionSet[questionNum - 1].correctAnswer}!</h2>
+      <h1>Nope! It was ${questionSet[questionNum - 1].correctAnswer}!</h1>
       <img src="https://media.giphy.com/media/3oz8xLd9DJq2l2VFtu/giphy.gif" alt="you're wrong gif">
       <button id="js-next-button">Next</button>
     </section>
@@ -235,7 +235,7 @@ function iterateCorrectAnswers() {
 function createResultsPage(correctAnswers) {
   $('#container').html(`
     <section id="final-page" role="region">
-      <h2>Final Score: You scored ${correctAnswers} out of 10</h2>
+      <h1>Final Score: You scored ${correctAnswers} out of 10</h1>
       <img src="https://media2.giphy.com/media/l3vR6c1DQiEwL0onu/source.gif" alt="it's over gif" class="center">
       <button id="js-restart-button">Restart Quiz?</button>
     </section>
